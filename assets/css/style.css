@@ -32,9 +32,10 @@ header {
     --cor-secundaria: #8c8c8c;
     --cor-branca: #fff;
     --cor-fundo: #1b1b1b;
+    --cor-fundo-box: #343434;
 }
 
-.nav-bar {
+.navbar {
     padding-top: 5vh;
     display: block;
     margin-left: auto;
@@ -48,7 +49,7 @@ header {
     height: 5vh;
 }
 
-.nav-bar .logo {
+.navbar .logo {
     font-size: 1.5rem;
 }
 
@@ -57,17 +58,13 @@ header {
     font-size: 1rem;
 }
 
-.nav-list li {
-    display: inline-block;
-}
-
 .nav-list a {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
 }
 
-.nav-bar ul li a:hover {
+.navbar ul li a:hover {
     color: var(--cor-principal);
     transition: 0.4s;
 }
@@ -138,4 +135,74 @@ header {
     to {
         translate: 20px 10px;
     }
+}
+
+.about-container {
+    width: 100%;
+    height: 95vh;
+    background-color: var(--cor-fundo);
+}
+
+.title { 
+    color: var(--cor-branca);
+    font-size: 2rem;
+}
+
+.description {
+    color: var(--cor-branca);
+    text-align: justify;
+}
+
+.description .title {
+    display: flex;
+}
+
+.description .title h3 {
+    margin-top: 5px;
+    text-decoration: underline;
+    text-decoration-color: var(--cor-principal);
+}
+
+.box-tech {
+    background-color: var(--cor-fundo-box);
+    max-width: 1340px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    border-radius: 15px;
+}
+
+.box-tech .icon-area { 
+    display: inline-block;
+}
+
+.box-tech .icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: ease-in-out 1s;
+}
+
+.box-tech .icon i { 
+    justify-content: center;
+    background-color: #a84aff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.box-tech .icon span {
+    margin-top: 5px;
+    color: var(--cor-branca);
+    font-weight: 500;
+}
+
+.box-tech .icon:hover {
+    transform: scale(1.2);
+    color: var(--cor-fundo-box);
 }
