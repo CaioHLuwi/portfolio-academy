@@ -236,8 +236,10 @@ header {
 
 }
 
-.card-project .card-top {
-    height: 150px;
+.card-project .card-top img {
+    width: 100%;
+    height: 230px;
+    border-radius: 7px 7px 0 0;
 }
 
 .card-project .card-tech {
