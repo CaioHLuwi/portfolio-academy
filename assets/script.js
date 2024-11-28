@@ -1,12 +1,7 @@
-import Typewritter from 'typewritter-effect/dist/core';
+import Typed from 'typed.js';
+var paragraph = document.querySelector('#titleArea')
 
-const titleArea = document.querySelector('#titleArea');
-
-var typeWritter = new Typewritter(titleArea, {
-    loop: true,
-    delay: 75,
-});
-
-typeWritter.typeString('Teste!')
-    .pauseFor(2500)
-    .deleteAll()
+var typed = new Typed(paragraph, {
+    strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+    typeSpeed: 50,
+})
