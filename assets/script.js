@@ -1,7 +1,14 @@
-import Typed from 'typed.js';
-var paragraph = document.querySelector('#titleArea')
+let titleArea = document.querySelector('#titleArea');
 
-var typed = new Typed(paragraph, {
-    strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-    typeSpeed: 50,
-})
+var typewriter = new Typewriter(titleArea, {
+    loop: true,
+    delay: 75,
+});
+
+typewriter
+    .typeString('Desenvolvedor Front-end')
+    .pauseFor(2500)
+    .deleteChars(23)
+    .typeString('Analista de Suporte')
+    .pauseFor(1000)
+    .start();

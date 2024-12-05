@@ -105,12 +105,13 @@ header {
     font-size: 2.5rem;
     color: var(--cor-branca);
     font-weight: 600;
-    text-decoration: underline;
     text-decoration-color: var(--cor-principal);
 }
 
-.box .title p {
+.box .title #titleArea{
     color: var(--cor-principal);
+    background-color: var(--cor-principal);
+    padding: 5px;
     font-weight: 700;
     font-size: 2.5rem;
 }
