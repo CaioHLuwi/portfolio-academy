@@ -30,3 +30,4 @@ typewriterTitle
     .deleteChars(19)
     .typeString('Desenvolvedor Front-end')
     .start();
+

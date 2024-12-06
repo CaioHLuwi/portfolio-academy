@@ -1,0 +1,19 @@
+{
+  "name": "portfolioacademy",
+  "version": "1.0.0",
+  "description": "Portfólio pessoal",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioHLuwi/portfolio-academy.git"
+  },
+  "author": "Caio Henrique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioHLuwi/portfolio-academy/issues"
+  },
+  "homepage": "https://github.com/CaioHLuwi/portfolio-academy#readme"
+}

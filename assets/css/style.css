@@ -6,6 +6,7 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -146,6 +147,19 @@ header {
     width: 100%;
     background-color: var(--cor-fundo);
     padding: 25px
+}
+
+#experiences {
+    width: 100%;
+    background-color: var(--cor-fundo);
+    height: 100vh;
+    padding: 25px
+}
+
+#experiences .title { 
+    color: var(--cor-branca);
+    font-size: 2rem;
+    text-decoration: underline var(--cor-principal);
 }
 
 .default-container .title { 
