@@ -312,3 +312,7 @@ header {
     border-radius: 2px;
 }
 
+.box-experiences {
+    color: var(--cor-branca);
+}
+
