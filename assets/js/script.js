@@ -5,7 +5,7 @@ async function getLinkedinInformation() {
         Authorization: `Bearer SSDBwtExzWQvFRtczfAGtPOp0KV27TL0JqU2Hth5VIXZIzy3BwhCv6mRI6mL`,
     }
 
-    let req = await fetch(`https://api.lix-it.com/v1/person?profile_link=${linkedinProfile}`, { 
+    let req = await fetch(`https://api.lix-it.com/v1/person?profile_link=https://linkedin.com/in/alfie-lambert`, { 
         method: 'GET',
         headers
     });
