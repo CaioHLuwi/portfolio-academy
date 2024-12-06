@@ -1,19 +1,36 @@
-async function getLinkedinInformation() {
-    const linkedinProfile = 'https://www.linkedin.com/in/caiohenriquelw';
+async function getExperienceData() {
+    const URL = "https://github.com/CaioHLuwi/portfolio-academy/blob/development/assets/json/data.json";
     const headers = {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer SSDBwtExzWQvFRtczfAGtPOp0KV27TL0JqU2Hth5VIXZIzy3BwhCv6mRI6mL`,
+        'Content-Type': 'application/json'
     }
 
-    let req = await fetch(`https://api.lix-it.com/v1/person?profile_link=https://linkedin.com/in/alfie-lambert`, { 
+    const req = await fetch(URL, {
         method: 'GET',
         headers
     });
-    let response  = await req.json();
-    response.catch((err) => {
-        console.log(err)
-    })
-    console.log(response);
+    
+    const res = await req.json();
+    console.log(res);
 }
 
-getLinkedinInformation();
+getExperienceData()
+
+
+        const titleExperiences = document.querySelectorAll('.experience-title');
+        const companyExperiences = document.querySelectorAll('.experience-company');
+        const workDateExperiences = document.querySelectorAll('.experience-workdate');
+        const descriptionExperiences = document.querySelectorAll('.experience-description');
+        const technologiesExperiences = document.querySelectorAll('.experience-technologies');
+
+function getExperiences() {
+
+    for(let i = 0; i < experiencesData.length; i++) {
+        titleExperiences[i].textContent = experiencesData[i].title
+        companyExperiences[i].textContent = experiencesData[i].company
+        workDateExperiences[i].textContent = experiencesData[i].workDate
+        descriptionExperiences[i].textContent = experiencesData[i].description
+        technologiesExperiences[i].textContent = `Tecnologias: ${experiencesData[i].technologies[i]}`;
+    }
+}
+
+getExperiences();
