@@ -20,6 +20,7 @@
     --cor-branca: #fff;
     --cor-fundo: #1b1b1b;
     --cor-fundo-box: #292828;
+    --cor-fundo-hover: #7406db;
 }
 
 .principal-color {
@@ -312,6 +313,10 @@ header {
     border-radius: 2px;
 }
 
+#experiences {
+    height: 100%;
+}
+
 #experiences .top-box {
     color: var(--cor-branca);
     width: 100%;
@@ -333,12 +338,12 @@ header {
 }
 
 .top-box .col-6:first-of-type .select-experience:hover {
-    background-color: var(--cor-fundo-box);
+    background-color: var(--cor-fundo-hover);
     border-radius: 9px 0px 0px 0px;
 }
 
 .top-box .col-6 .select-experience:hover {
-    background-color: var(--cor-fundo-box);
+    background-color: var(--cor-fundo-hover);
     border-radius: 0px 9px 0px 0px;
     cursor: pointer;
 }

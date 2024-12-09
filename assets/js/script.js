@@ -17,21 +17,58 @@ const experiencesData = [
     },
 ]
 
-        const titleExperiences = document.querySelectorAll('.experience-title');
-        const companyExperiences = document.querySelectorAll('.experience-company');
-        const workDateExperiences = document.querySelectorAll('.experience-workdate');
-        const descriptionExperiences = document.querySelectorAll('.experience-description');
-        const technologiesExperiences = document.querySelectorAll('.experience-technologies');
-
 function getExperiences() {
+    const experienceBoxes = document.querySelectorAll('.box-experiences');
 
-    for(let i = 0; i < experiencesData.length; i++) {
-        titleExperiences[i].textContent = experiencesData[i].title
-        companyExperiences[i].textContent = experiencesData[i].company
-        workDateExperiences[i].textContent = experiencesData[i].workDate
-        descriptionExperiences[i].textContent = experiencesData[i].description
-        technologiesExperiences[i].textContent = `Tecnologias: ${experiencesData[i].technologies.join(', ')}`;
-    }
+    experienceBoxes.forEach((box, index) => {
+        const experience = experiencesData[index];
+        if (experience) {
+            // Atualizar os dados do box correspondente
+            const titleElement = box.querySelector('.experience-title');
+            const companyElement = box.querySelector('.experience-company');
+            const workDateElement = box.querySelector('.experience-workdate');
+            const descriptionElement = box.querySelector('.experience-description');
+            const technologiesElement = box.querySelector('.experience-technologies');
+
+            if (titleElement) titleElement.textContent = experience.title || '--';
+            if (companyElement) companyElement.textContent = experience.company || '--';
+            if (workDateElement) workDateElement.textContent = experience.workDate || '--';
+            if (descriptionElement) descriptionElement.textContent = experience.description || '--';
+            if (technologiesElement) {
+                technologiesElement.textContent = `Tecnologias: ${experience.technologies?.join(', ') || 'N/A'}`;
+            }
+        }
+    });
+}
+
+function selectExperience(){
+    const selectArea = document.querySelectorAll('.select-experience');
+    const boxExperiences = document.querySelectorAll('.box-experiences');
+    const experienceOne = document.querySelector('#experienceOne');
+    const experienceTwo = document.querySelector('#experienceTwo');
+
+    selectArea[0].addEventListener('click', () => {
+        if(experienceOne.classList.contains('d-block')) {
+            experienceOne.classList.replace('d-block', 'd-none');
+            console.log('Aqui')
+        } else {
+            experienceOne.classList.replace('d-none', 'd-block');
+            experienceTwo.classList.replace('d-block', 'd-none');
+            console.log('Ali')
+        }
+    })
+
+    selectArea[1].addEventListener('click', () => {
+        if(experienceOne.classList.contains('d-block')) {
+            experienceOne.classList.replace('d-block', 'd-none');
+            experienceTwo.classList.replace('d-none', 'd-block')
+            console.log('Aqui')
+        } else {
+            experienceOne.classList.replace('d-none', 'd-block');
+            console.log('Ali')
+        }
+    })
 }
 
 getExperiences();
+selectExperience();
