@@ -312,6 +312,42 @@ header {
     border-radius: 2px;
 }
 
+#experiences .top-box {
+    color: var(--cor-branca);
+    width: 100%;
+    display: flex;
+    background-color: #a54ef7;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.top-box .col-6:first-child .select-experience {
+    text-align: center;
+    border-right: 2px solid #fff;
+}
+
+.top-box .col-6 .select-experience {
+    padding-top: 15px;
+    text-align: center;
+    height: 100%;
+    transition: ease-in-out 0.7s;
+}
+
+.top-box .col-6:first-of-type .select-experience:hover {
+    background-color: var(--cor-fundo-box);
+    border-radius: 9px 0px 0px 0px;
+}
+
+.top-box .col-6 .select-experience:hover {
+    background-color: var(--cor-fundo-box);
+    border-radius: 0px 9px 0px 0px;
+    cursor: pointer;
+}
+
+.select-experience span, 
+.select-experience p {
+    width: 100%;
+}
+
 .box-experiences {
     color: var(--cor-branca);
 }

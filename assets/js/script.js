@@ -9,12 +9,12 @@ const experiencesData = [
     },
     {
         title: 'Suporte técnico N2',
-        company: 'MMonteiro Soluções em Técnologia',
-        workDate: 'Jun de 2024 - Set de 2024 · 4 meses',
+        company: 'MMonteiro Soluções em Tecnologia',
+        workDate: 'Abr de 2023 - Jun de 2024 · 1 ano e 2 meses',
         description: 'Atuei na conquista do selo "Microsoft Partner", implementei o 1Password para gerenciamento seguro de credenciais e atendi simultaneamente mais de 10 empresas, com foco em executivos e diretores. Implementei ambientes Microsoft 365, migrei serviços como Gmail para Outlook e Keep para OneNote, documentei processos técnicos e realizei manutenção física e remota de dispositivos. Possuo experiência com Google Workspace, Microsoft 365 Admin Center, configuração de redes, Active Directory e gerenciamento de DNS. Também prestei assistência administrativa, registrei domínios, gerenciei e-mails e colaborei em suporte de TI, infraestrutura e administração.',
         tools: '',
         technologies: ['Google Workspaces Solutions', 'Ubuntu Unifi', 'Microsoft 365 Solutions']
-    }
+    },
 ]
 
         const titleExperiences = document.querySelectorAll('.experience-title');
