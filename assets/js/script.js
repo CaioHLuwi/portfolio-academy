@@ -11,7 +11,7 @@ const experiencesData = [
         title: 'Suporte técnico N2',
         company: 'MMonteiro Soluções em Tecnologia',
         workDate: 'Abr de 2023 - Jun de 2024 · 1 ano e 2 meses',
-        description: 'Atuei na conquista do selo "Microsoft Partner", implementei o 1Password para gerenciamento seguro de credenciais e atendi simultaneamente mais de 10 empresas, com foco em executivos e diretores. Implementei ambientes Microsoft 365, migrei serviços como Gmail para Outlook e Keep para OneNote, documentei processos técnicos e realizei manutenção física e remota de dispositivos. Possuo experiência com Google Workspace, Microsoft 365 Admin Center, configuração de redes, Active Directory e gerenciamento de DNS. Também prestei assistência administrativa, registrei domínios, gerenciei e-mails e colaborei em suporte de TI, infraestrutura e administração.',
+        description: 'Conquistei o selo "Microsoft Partner" para a empresa, realizando todos os processos necessários para a aquisição dos benefícios associados. Realizei atendimentos simultâneos a mais de 10 empresas, com foco em executivos e diretores, sempre prezando pela cordialidade e eficiência. Minhas atividades incluíram configuração e manutenção de hardware, como desktops, notebooks, impressoras e scanners, além de software. Desenvolvi relatórios detalhados sobre atendimentos e serviços prestados, e possuo sólidos conhecimentos em sistemas operacionais Windows e noções básicas de Linux e macOS. Atuei na administração de contas corporativas no Google Workspace e Microsoft 365, realizando criação, exclusão e gerenciamento de usuários e grupos de e-mails. Gerenciei sites e intranets com SharePoint, organizando permissões de acesso e estrutura hierárquica de arquivos, bem como bases de dados no Google Workspace, como drives compartilhados. Executei manutenções preventivas em dispositivos, tanto de forma remota quanto presencial, e implementei o uso do software 1Password para o gerenciamento de senhas. Documentei processos técnicos para uso interno e por novos colaboradores, criando uma base de conhecimento eficiente. Tenho conhecimentos básicos em configuração de roteadores, switches e redes, criação de diretórios e compartilhamento de arquivos em rede via servidores locais, além de noções em Microsoft Active Directory. Também ofereci suporte técnico a aplicativos do pacote Office 365.',
         tools: '',
         technologies: ['Google Workspaces Solutions', 'Ubuntu Unifi', 'Microsoft 365 Solutions']
     },
@@ -35,7 +35,7 @@ function getExperiences() {
             if (workDateElement) workDateElement.textContent = experience.workDate || '--';
             if (descriptionElement) descriptionElement.textContent = experience.description || '--';
             if (technologiesElement) {
-                technologiesElement.textContent = `Tecnologias: ${experience.technologies?.join(', ') || 'N/A'}`;
+                technologiesElement.innerHTML = `<span class='principal-color'> Tecnologias: </span> ${experience.technologies?.join(', ') || 'N/A'}`;
             }
         }
     });
@@ -49,23 +49,16 @@ function selectExperience(){
 
     selectArea[0].addEventListener('click', () => {
         if(experienceOne.classList.contains('d-block')) {
-            experienceOne.classList.replace('d-block', 'd-none');
-            console.log('Aqui')
         } else {
             experienceOne.classList.replace('d-none', 'd-block');
             experienceTwo.classList.replace('d-block', 'd-none');
-            console.log('Ali')
         }
     })
 
     selectArea[1].addEventListener('click', () => {
         if(experienceOne.classList.contains('d-block')) {
             experienceOne.classList.replace('d-block', 'd-none');
-            experienceTwo.classList.replace('d-none', 'd-block')
-            console.log('Aqui')
-        } else {
-            experienceOne.classList.replace('d-none', 'd-block');
-            console.log('Ali')
+            experienceTwo.classList.replace('d-none', 'd-block');
         }
     })
 }

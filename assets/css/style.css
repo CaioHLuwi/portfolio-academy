@@ -14,6 +14,10 @@
     font-family: 'Fira Code', monospace;
 }
 
+body {
+    background-color: var(--cor-fundo);
+}
+
 :root {
     --cor-principal: #a54ef7;
     --cor-secundaria: #8c8c8c;
@@ -21,6 +25,7 @@
     --cor-fundo: #1b1b1b;
     --cor-fundo-box: #292828;
     --cor-fundo-hover: #7406db;
+    --cor-texto-principal: #b25fff;
 }
 
 .principal-color {
@@ -145,12 +150,14 @@ header {
 }
 
 .default-container {
+    margin-top: 5rem;
     width: 100%;
     background-color: var(--cor-fundo);
     padding: 25px
 }
 
 #experiences {
+    margin-top: 5rem;
     width: 100%;
     background-color: var(--cor-fundo);
     height: 100vh;
@@ -355,5 +362,33 @@ header {
 
 .box-experiences {
     color: var(--cor-branca);
+    padding: 20px;
+    border: solid 3px var(--cor-principal);
+    transition: 1s ease-in-out;
+}
+
+.box-experiences .top-side .experience-company {
+    color: var(--cor-branca);
+    background-color: var(--cor-principal);
+    display: inline-block;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.box-experiences .mid-side .experience-description {
+
+}
+
+.box-experiences .bot-side {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.box-experiences .bot-side a,
+.box-experiences .bot-side .experience-workdate {
+    color: var(--cor-texto-principal);
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
