@@ -5,6 +5,23 @@
     border: 1px solid green;
 }
 
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--cor-principal);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cor-fundo-box);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-principal);
+    border-radius: 12px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -196,6 +213,20 @@ header {
     font-size: 1.5rem;
 }
 
+.social {
+    margin-top: 15%;
+    margin-left: 2%;
+    position: fixed;
+    background-color: var(--cor-fundo-box);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.social .social-area {
+    display: flex;
+    flex-direction: column;
+}
+
 .social .icon a{
     background-color: var(--cor-principal);
     width: 60px;
@@ -207,6 +238,10 @@ header {
     border: 3px solid #2b2b2b;
     color: var(--cor-branca);
     text-decoration: none;
+}
+
+#technologies {
+    margin-top: 5rem;
 }
 
 .box-tech {
@@ -392,3 +427,53 @@ header {
     text-decoration: none;
 }
 
+.form-contact {
+    color: var(--cor-branca);
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-fundo-box);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.form-contact span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--cor-principal);
+}
+
+.form-contact .form-item {
+    margin-top: 20px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-contact .form-item label{
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1.2rem;
+} 
+
+.form-contact .form-item input,
+.form-contact .form-item textarea {
+    border: solid 1px var(--cor-principal);
+    outline: none;
+    background-color: var(--cor-fundo);
+    padding: 5px;
+    color: var(--cor-branca);
+    width: 100%;
+}
+
+.form-contact .form-item button {
+    width: 100%;
+    border: none;
+    background-color: var(--cor-principal);
+    padding: 10px;
+    color: var(--cor-branca);
+}

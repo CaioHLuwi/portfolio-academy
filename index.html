@@ -34,6 +34,22 @@
             </ul>
         </nav>
     </header>
+    <div class="social d-flex flex-column gap-4">
+        <div class="social-area d-flex flex-c gap-4">
+            <div class="icon">
+                <a href="https://github.com/CaioHLuwi"><i class="fa-brands fa-github fs-2"></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/caiohenriquelw/"> <i class="fa-brands fa-linkedin-in fs-3"></i> </a> 
+            </div>
+            <div class="icon">
+                <a href="mailto:caio.undertakes@gmail.com"><i class="fa-solid fa-envelope fs-3"></i></a>
+            </div>
+            <div class="icon">
+                <a href="https://api.whatsapp.com/send/?phone=11948468684&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp fs-3"></i></a>
+            </div>
+        </div>
+    </div>
     <a id="inicio"></a>
     <section class="initial-container">
         <div class="container">
@@ -42,7 +58,7 @@
                     <div class="wrapper">
                         <div class="box">
                             <div class="title">
-                                <h1 class="fs-2"> Opa, eu sou o <span class="fs-1"> Caio Henrique </span> </h1>
+                                <h1 class="fs-2"> Olá, eu sou o <span class="fs-1"> Caio Henrique </span> </h1>
                                 <p class="fs-1" id="titleArea"> </p>
                             </div>
                         </div>
@@ -74,10 +90,10 @@
                     </div>
                 </div>
                 <div class="col-6 col-md-12 col-lg-6 d-none d-md-none d-lg-none d-xl-flex justify-content-center">
-                    <img src="assets/images/purple-square-s1.jpg" class="img-fluid rounded-5" style="max-width: 550px; height: 550px;" alt="">
+                    <img src="assets/images/about-image.jpg" class="img-fluid rounded-5" style="max-width: 550px; height: 550px;">
                 </div>
             </div>
-            <div class="technologies mt-5">
+            <div id="technologies">
                 <div class="box-tech mt-3">
                     <div class="top">
                         <i class="bi bi-plus principal-color fs-2"></i> <span class="title"> Habilidades </span>
@@ -260,32 +276,32 @@
     <section class="default-container">
         <div class="container">
             <i class="bi bi-arrow-right-short principal-color fs-2"> </i> <span class="title"> Contato </span>
-            <div class="row">
-                <div class="col-8">
-
-                </div>
-                <div class="col-4">
-                    <div class="social d-flex flex-column gap-4">
-                        <div class="social-area d-flex mt-5 flex-c gap-4 mb-5">
-                            <div class="icon">
-                                <a href="https://github.com/CaioHLuwi"><i class="fa-brands fa-github fs-2"></i></a>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div class="form-contact">
+                        <form name="contato">
+                            <span>Entre em contato comigo!</span>
+                            <div class="form-item">
+                                <label for="">Assunto</label>
+                                <input type="text">
                             </div>
-                            <div class="icon">
-                                <a href="https://www.linkedin.com/in/caiohenriquelw/"> <i class="fa-brands fa-linkedin-in fs-3"></i> </a> 
+                            <div class="form-item">
+                                <label for="message">Mensagem</label>
+                                <textarea name="message" rows="5"></textarea> 
                             </div>
-                            <div class="icon">
-                                <a href="mailto:caio.undertakes@gmail.com"><i class="fa-solid fa-envelope fs-3"></i></a>
+                            <div class="form-item">
+                                <button> <i class="fa-solid fa-paper-plane"></i> Enviar</button>
                             </div>
-                            <div class="icon">
-                                <a href="https://api.whatsapp.com/send/?phone=11948468684&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp fs-3"></i></a>
-                            </div>
-                        </div>
+                        </form>
                     </div>
+                </div>
+                <div class="col-6 d-flex justify-content-center">
+                    <img src="assets/images/contact.jpg" class="img-fluid rounded-5" style="height: 550px;"  alt="Foto de uma rua deserta">
                 </div>
             </div>
         </div>
     </section>
-    <footer class="bg-dark principal-color text-center">
+    <footer class="bg-dark principal-color text-center mt-5 mb-0">
         Desenvolvido por Caio Henrique - Todos direitos reservados 2024
     </footer>
 
